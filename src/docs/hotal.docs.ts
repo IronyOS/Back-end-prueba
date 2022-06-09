@@ -99,16 +99,20 @@
  *              foto:
  *                  type: string
  *                  description: url de la imagen 
- *              coordenadas:
+ *              geometry1:
  *                  type: string
- *                  description: cordenadas en eje x y del hostal
+ *                  description: cordenadas en latitud x y del hostal
+ *              geometry2:
+ *                   type: string
+ *                   description: cordenadas en long y del 
  *          required: 
  *                  - nombre:
  *                  - ciudad:
  *                  - sede:
  *                  - descripcion:
  *                  - foto:
- *                  - coordenadas:
+ *                  - geometry1:
+ *                  - geometry2:
  *                  - direccion: 
  * @swagger
  * /api/hostal:
@@ -176,9 +180,12 @@
  *                          foto:
  *                              type: string
  *                              format: binary
- *                          coordenadas:
+ *                         geometry1:
  *                              type: string
- *                              description: cordenadas en eje x y del hostal       
+ *                              description: cordenadas en latitud x y del hostal
+ *                         geometry2:
+ *                              type: string
+ *                              description: cordenadas en long y del        
  *      responses:
  *          200:
  *              description: Hostal creada
